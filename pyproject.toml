@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vivid-player"
+version = "1.3.0"
+description = "A native Linux video player with a Fluent inspired interface and mpv playback"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE", "vivid/assets/fonts/OFL.txt"]
+authors = [{name = "Irisko007"}]
+keywords = ["linux", "video-player", "mpv", "qt", "fluent"]
+classifiers = ["Operating System :: POSIX :: Linux", "Programming Language :: Python :: 3", "Topic :: Multimedia :: Video :: Display"]
+requires-python = ">=3.10"
+dependencies = ["PySide6-Essentials>=6.7,<7"]
+
+[project.urls]
+Homepage = "https://github.com/Irisko007/Vivid"
+Repository = "https://github.com/Irisko007/Vivid"
+Issues = "https://github.com/Irisko007/Vivid/issues"
+Changelog = "https://github.com/Irisko007/Vivid/blob/main/CHANGELOG.md"
+
+[project.scripts]
+vivid = "vivid.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["vivid*"]
+
+[tool.setuptools.package-data]
+vivid = ["assets/*.png", "assets/*.svg", "assets/icons/*.svg", "assets/fonts/*.ttf", "assets/fonts/*.txt", "locales/*.json"]

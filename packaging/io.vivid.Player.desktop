@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Name=Vivid
+GenericName=Video Player
+Comment=Personal Linux video player
+Exec=vivid %F
+Icon=io.vivid.Player
+Terminal=false
+Categories=AudioVideo;Video;Player;
+MimeType=video/mp4;video/x-matroska;video/webm;video/quicktime;video/vnd.avi;video/mpeg;video/mp2t;video/ogg;
+StartupWMClass=vivid
+StartupNotify=true

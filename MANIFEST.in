@@ -1,0 +1,7 @@
+include README.md README.ru.md LICENSE CHANGELOG.md CONTRIBUTING.md SECURITY.md
+include default.nix shell.nix run.sh install.sh set-default.sh
+recursive-include vivid/assets *.png *.svg *.ttf *.txt
+recursive-include vivid/locales *.json
+recursive-include scripts *.py *.sh
+recursive-include packaging *.desktop
+recursive-include docs *.md *.png
